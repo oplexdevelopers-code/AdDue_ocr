@@ -11,7 +11,11 @@ from typing import Any, Dict, List
 @lru_cache(maxsize=1)
 def _get_engine():
     from paddleocr import PaddleOCR
-    return PaddleOCR(use_textline_orientation=True, lang="en")
+    return PaddleOCR(
+        use_textline_orientation=False,
+        enable_mkldnn=False,
+        lang="en",
+    )
 
 
 def extract_text(file_path: str) -> List[Dict[str, Any]]:
