@@ -3,3 +3,5 @@ uvicorn[standard]>=0.39.0
 python-multipart>=0.0.9
 paddlepaddle
 paddleocr
+pypdf
+Pillow
