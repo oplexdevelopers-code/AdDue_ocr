@@ -12,7 +12,7 @@ def _get_engine():
     from paddleocr import PaddleOCR
     return PaddleOCR(
         use_textline_orientation=False,
-        enable_mkldnn=True,
+        enable_mkldnn=False,
         lang="en",
     )
 
